@@ -8,13 +8,11 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts-with-stylus start src/index.styl",
+    "build": "react-scripts-with-stylus build src/index.styl",
+    "lint": "./node_modules/.bin/eslint src/",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -27,5 +25,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@agillic/eslint-config": "0.0.4",
+    "create-react-app-stylus": "^1.1.1"
   }
 }
