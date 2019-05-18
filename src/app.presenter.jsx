@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './components/button/button.presenter'
 
 const App = () => (
   <div className='App'>
@@ -15,6 +16,10 @@ const App = () => (
         Learn React
       </a>
     </header>
+    <Button
+      caption='Click me!'
+      onClick={() => {}}
+    />
   </div>
 )
 
